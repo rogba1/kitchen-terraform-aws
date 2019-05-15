@@ -3,9 +3,9 @@ pipeline {
 
     stages {
   
-        stage('Test') {
+        stage('Terraform Kitchen') {
             steps {
-                echo 'Testing..'
+                sh 'kitchen test'
             }
         }
 
